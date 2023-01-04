@@ -90,7 +90,7 @@ function Info() {
                 <p className="p-5 text-xl">Your Top Tracks:</p>
                 <div className="flex flex-grow items-center space-x-10 p-4">
                     {topTracks.map((track) => (
-                        <div key={artist.id} className="flex flex-col flex-wrap items-center">
+                        <div key={track.id} className="flex flex-col flex-wrap items-center">
                             <p className="p-2">{track.name}</p>
                         </div>
                     ))}
