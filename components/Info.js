@@ -38,6 +38,8 @@ function Info() {
 
     }, [session, spotifyApi]);
 
+    console.log(artistIds)
+
 
   /*  const artIds = [];
 

@@ -38,13 +38,13 @@ function Recommend() {
             spotifyApi.getRecommendations({
                 seed_artists: artistIds,
                 max_liveness: 0.4,
-                target_enery: 0.3,
+                target_energy: 0.3,
             }).then((data3) => {
                 setPlaylist3(data3.body.tracks);
             }).catch((err) => console.log("error while fetching recommendation", err)); 
             spotifyApi.getRecommendations({
                 seed_artists: artistIds,
-                max_energy: 0.6,
+                max_energy: 0.5,
                 max_loudness: 0.4,
             }).then((data4) => {
                 setPlaylist4(data4.body.tracks);
