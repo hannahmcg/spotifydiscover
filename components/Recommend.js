@@ -82,7 +82,7 @@ function Recommend() {
             </div>
             <div className="">
                 <div className="flex flex-col space-y-1">
-                    <h2 className="text-xl text-center">Let's Dance!</h2>
+                    <h2 className="text-xl text-center">Dance Dance!</h2>
                     {playlist2.map((track) => (
                             <div key={track.id} className="flex items-center">
                                 <img className="w-10 h-10" src={track.album?.images?.[0]?.url} alt=""/>

@@ -1,9 +1,8 @@
-import { Main } from 'next/document'
+/*import { Main } from 'next/document'*/
 import Head from 'next/head'
 import Image from 'next/image'
 import MyApp from './_app.js'
 import {getSession, signOut, useSession} from 'next-auth/react'
-import SpotifyClone from './clone.js'
 import Link from 'next/link';
 import Info from '../components/Info'
 import Recommend from '../components/Recommend'
@@ -41,7 +40,7 @@ export default function Home() {
             </div>
         </div>
       </div>
-      <h3 className="text-xl pt-10 pb-4 text-center">Look at cool stuff based on your listening habits :D</h3>
+      <h3 className="text-xl pt-10 pb-4 text-center">Inspired by Spotify Discover. Look at cool stuff based on your current listening habits! :D</h3>
 
       <div className="">
           <div className="p-20 text-center">

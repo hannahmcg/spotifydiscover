@@ -79,9 +79,9 @@ function Info() {
                 <p className="p-5 text-xl">Your Top Artists:</p>
                 <div className="flex flex-grow items-center space-x-20 p-4">
                     {topArtists.map((artist) => (
-                        <div className="flex flex-col items-center">
+                        <div key={artist.id} className="flex flex-col items-center">
                             <img className="w-15 h-15 md:w-25 md:h-25 rounded-full" src={artist.images?.[0]?.url} alt=""/>
-                            <p key={artist.id} className="p-2">{artist.name}</p>
+                            <p className="p-2">{artist.name}</p>
                         </div>
                     ))}
                 </div>
@@ -90,8 +90,8 @@ function Info() {
                 <p className="p-5 text-xl">Your Top Tracks:</p>
                 <div className="flex flex-grow items-center space-x-10 p-4">
                     {topTracks.map((track) => (
-                        <div className="flex flex-col flex-wrap items-center">
-                            <p key={track.id} className="p-2">{track.name}</p>
+                        <div key={artist.id} className="flex flex-col flex-wrap items-center">
+                            <p className="p-2">{track.name}</p>
                         </div>
                     ))}
                 </div>
